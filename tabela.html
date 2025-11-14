@@ -1,44 +1,91 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-   <meta charset="UTF-8"> 
-   <title>Tabela HTML</title> 
-</head> 
-<body> 
-<table border=2> 
-   <caption>Tytuł tabela HTML</caption> 
-   <thead> 
-      <tr>  <span style=color: black;>    
-         <th>Kolumna 1</th> 
-         <th>Kolumna 2</th> 
-         <th>Kolumna 3</th> 
-         <th>Kolumna 4</th> 
-         <th>Kolumna 5</th> 
-      </tr> 
-   </thead> 
-   <tbody> 
-      <tr> 
-         <td>Komórka 1</td> 
-         <td>Komórka 2</td> 
-         <td>Komórka 3</td> 
-         <td>Komórka 4</td> 
-         <td>Komórka 5</td> 
-      </tr> 
-      <tr> 
-         <td>Komórka 6</td> 
-         <td>Komórka 7</td> 
-         <td>Komórka 8</td> 
-         <td>Komórka 9</td> 
-         <td>Komórka 10</td> 
-      </tr> 
-      <tr> 
-         <td>Komórka 11</td> 
-         <td>Komórka 12</td> 
-         <td>Komórka 13</td> 
-         <td>Komórka 14</td> 
-         <td>Komórka 15</td> 
-      </tr> 
-   </tbody> 
-</table> 
-</body> 
-</html>              
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Specyfikacja Kart Graficznych - Ostrowski 2Fg2</title>
+<style>
+
+        /* Styl ogólny dla przejrzystości */
+
+        table {
+
+            border: 6px solid red; /* Szerokość obramowania 6px dla tabeli */
+
+            border-collapse: collapse;
+
+            width: 80%; /* Ustawienie szerokości tabeli */
+
+            margin: 20px auto; /* Wyśrodkowanie */
+
+        }
+
+        caption {
+
+            font-size: 1.5em;
+
+            font-weight: bold;
+
+            padding: 10px;
+
+        }
+
+        th, td {
+
+            border: 1px solid black; /* Jednolite obramowanie dla komórek */
+
+            padding: 10px;
+
+            text-align: center;
+
+        }
+
+        thead tr {
+
+            border: 3px solid black; /* Obramowanie wiersza nagłówkowego */
+
+            border-collapse: collapse;
+
+            background-color: #CCCCCC; /* Szare tło dla nagłówków */
+
+        }
+</style>
+</head>
+<body>
+<table style="border:6px solid red;border-collapse: collapse;">
+<caption>Tabela Specyfikacji Kart Graficznych</caption>
+<thead>
+<tr>
+<th>Model</th>
+<th>Pamięć VRAM</th>
+<th>Typ Pamięci</th>
+<th>Taktowanie Boost (MHz)</th>
+<th>Złącza</th>
+</tr>
+</thead>
+<tbody>
+<tr style="font-family: Arial; font-size: 18px;">
+<td>**NVIDIA GeForce RTX 4070**</td>
+<td>12 GB</td>
+<td>GDDR6X</td>
+<td>2475</td>
+<td>HDMI 2.1, 3x DP 1.4a</td>
+</tr>
+<tr style="color: green; font-weight: bold;">
+<td>**AMD Radeon RX 7900 XT**</td>
+<td style="border:3px solid black; border-collapse: collapse;">20 GB</td> <td>GDDR6</td>
+<td>2400</td>
+<td>HDMI 2.1, 2x DP 2.1</td>
+</tr>
+<tr style="background-color: #66CCFF;">
+<td>**Intel Arc A770**</td>
+<td>16 GB</td>
+<td>GDDR6</td>
+<td>2100</td>
+<td>HDMI 2.1, 3x DP 2.0</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+ 
+
