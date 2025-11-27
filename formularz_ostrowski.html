@@ -6,7 +6,117 @@
              <title>formularz_ostrowski</title> 
      </head> 
     <body> 
+         <h2 style="text-align:center;">DANE ZAMÓWIENIA</h2>
+
+<!-- Sekcja: Kontynuuj bez logowania -->
+<fieldset>
+    <legend><b>KONTYNUUJ BEZ LOGOWANIA</b></legend>
+
+    <p>
+        <label><input type="radio" name="typ" checked> Osoba prywatna</label>
+        &nbsp;&nbsp;
+        <label><input type="radio" name="typ"> Firma</label>
+    </p>
+
+    <table cellspacing="6">
+        <tr>
+            <td>
+                Imię i nazwisko<br>
+                <input type="text" name="imie" size="30">
+            </td>
+            <td>
+                Ulica / nr domu<br>
+                <input type="text" name="ulica" size="30">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Adres email<br>
+                <input type="email" name="email" size="30">
+            </td>
+            <td>
+                Nr mieszkania (opcjonalnie)<br>
+                <input type="text" name="mieszkanie" size="30">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Kraj<br>
+                <input type="text" name="kraj" size="30">
+            </td>
+            <td>
+                Kod pocztowy<br>
+                <input type="text" name="kod" size="30">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Miejscowość<br>
+                <input type="text" name="miasto" size="30">
+            </td>
+            <td>
+                Telefon (opcjonalnie)<br>
+                <input type="text" name="telefon" size="30">
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+<br>
+
+<!-- Sekcja: Logowanie -->
+<fieldset>
+    <legend><b>MAM JUŻ KONTO</b></legend>
+
+    Email<br>
+    <input type="email" name="login_email" size="40"><br><br>
+
+    Hasło<br>
+    <input type="password" name="login_pass" size="40"><br><br>
+
+    <button type="button">Zaloguj</button>
+    &nbsp;&nbsp;
+    <a href="#">Nie pamiętam hasła</a>
+</fieldset>
+
+<br>
+
+<!-- Zgody -->
+<fieldset>
+    <legend><b>Zgody i oświadczenia</b></legend>
+
+    <label>
+        <input type="checkbox" checked>
+        Zapoznałem/am się oraz akceptuję regulamin i politykę prywatności sklepu.
+    </label>
+    <br><br>
+
+    <label>
+        <input type="checkbox" checked>
+        Akceptuję warunki płatności i dostawy.
+    </label>
+    <br><br>
+
+    <label>
+        <input type="checkbox">
+        Zapisz się do newslettera (opcjonalnie).
+    </label>
+</fieldset>
+
+<br><br>
+
+<!-- Przyciski -->
+<p>
+    <button type="button">&larr; Wróć</button>
+    &nbsp;&nbsp;&nbsp;
+    <button type="submit">Dalej &rarr;</button>
+</p>
 tutaj będzie formularz<br>
 <A HREF="index.html"> Wróć </A>
+         
     </body> 
+
   </html>
